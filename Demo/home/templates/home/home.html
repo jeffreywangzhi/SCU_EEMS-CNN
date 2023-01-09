@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Home screen</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'style2.css' %}">
+</head>
+
+<body>
+    <div id="w" style="text-align:center;">
+        <h1 class="ml12">Welcome to EEMS</h1>
+    </div>
+    <div class="uicon">
+        <a href="/upload/">
+            <img src="{% static 'upload.png' %}">
+            <div class="t">
+                <font size="6">Picture Upload</font>
+            </div>
+            
+        </a>
+        
+    </div>
+    <div class="aicon">
+        <a href="/analysis/"><img src="{% static 'analysis.png' %}" width="600">
+        <div class="t2">
+            <font size="6">Analysis</font>
+        </div>
+        </a>
+    </div>
+</body>
+
+
+</html>
