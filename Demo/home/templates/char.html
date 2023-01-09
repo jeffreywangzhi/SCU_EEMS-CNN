@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upper HTML Website Template</title>
+    <script src ="/Demo/home/static/js/Chart.bundle.js"></script>
+    <!-- <link rel ="stylesheet" type="text/css" media="screen" href="/Demo/home/static/anaCSS/main.css"> -->
+</head>
+
+<body>
+    <div id="ans">
+    <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script>
+        (function () {
+            'use strict';
+            var type = 'pie'; //pie, doughnut
+            var data = {
+                labels: ['SB', 'HR', 'IT'],
+                datasets: [
+                    {
+                        data: [70, 40, 55],
+                        backgroundColor: ['green', 'gray', 'pink']
+                    }
+                ]
+            };
+            
+            var options = {
+                title: {
+                    display: true,
+                    text: 'emp'
+                    
+                    
+                },
+                //cutoutPercentage: 20,
+            };
+            var ctx = document.getElementById('mychart').getcontext('2d');
+            var chart = new Chart(ctx, {
+                type: type,
+                data: data,
+                options: options
+            });
+            document.getElementById('ans').innerHTML=chart;
+        })();
+    </scripts>
+</body>
+</html>
+    

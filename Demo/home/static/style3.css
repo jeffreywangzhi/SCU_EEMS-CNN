@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #19051f;
+  color: #ffffff;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+div#main UL LI {
+  padding: 10px;
+  font-size: 20px;
+}
+
+div#feedback {
+  padding: 15px;
+}
+
+div#container {
+  margin: 15px;
+}
+
+div#drop-zone {
+  height: 400px;
+  width: 400px;
+  border: 2px dotted #ebebeb;
+}
+
+div#drop-zone:hover {
+  background-color: gray;
+  border: 1px dotted #000000;
+  cursor: move;
+}
+
+div#content {
+  border: 1px solid #FFF;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.main-icon img{
+  float: left;
+  width: 33px;
+  height: 33px;
+  background: #555;
+  padding: 0px; 
+  margin-right: 6px;
+}
+.main-icon h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.uh{
+  color: rgb(192, 153, 234);
+  position: relative;
+  top: 12px;
+  left: -580px;
+  float: left;
+}
+
+.uh2{
+  color: rgb(192, 153, 234);
+  position: relative;
+  top: -10px;
+  left: 580px;
+}
+
+.y{
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.y .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.yeah{
+  display: inline;
+}

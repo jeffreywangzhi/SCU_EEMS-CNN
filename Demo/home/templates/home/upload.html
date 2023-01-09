@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<html>
+
+<head>
+    <title>Picture upload</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'style3.css' %}">
+    <script>
+        
+        // function run(){
+        //     try{
+        //         var res = {{ result }}
+        //         if(res != ''){
+        //             document.getElementById("res").style.display = 'block';
+        //         }
+        //     }
+        //     catch(e){
+        //         document.getElementById("res").style.display = 'none';
+        //     }
+        // }
+        // var res = {{ result }}
+        // const arrEmp = ["PR001","PR002","PR003","PR004","PR005","IT001","IT002","IT003","IT004","IT005","HR001","HR002","HR003","HR004","HR005"];
+        // var empNo = document.getElementById("empNo").value;
+        // if(arrEmp.includes(empNo) == true)
+
+
+        
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="yeah">
+            <a href="/home/">
+                <div class="uh">
+                    <img src="{% static 'img/homeBut.jpg' %}" width="60">
+                    <span>
+                        <font size="5">Home</font>
+                    </span>
+                </div>
+            <br>
+            <a href="/analysis/">
+                <div class="uh2">
+                    <img src="{% static 'img/analysisBut.png' %}" width="100">
+                    <span>
+                        <font size="5">Analysis</font>
+                    </span>
+                </div>
+        </a>
+        </div>
+        <font class="y">Picture upload</font>
+        <br>
+        <span>
+            <input type="text" id="empNo" name="eid" autocomplete="on" placeholder="請輸入員工編號" required>
+            <input type="submit" value="Comfirm" onclick="msg()">
+        </span>
+        <br>
+        <span>
+            <input type="file" id="file-uploader" accept=".jpg, .jpeg, .png">
+        </span>
+        <div id="image-grid"></div>
+
+        <form method="post" action="/getdata/">
+            {% csrf_token %}
+            <textarea rows=10 cols=10 id="basefile" name="basefile" style="display:none">請勿編輯</textarea><br>
+            <input type="submit" value="進行分析">
+        </form>
+    </div>
+    
+    <h1 id="res" style="color:white; text-align: center">分析結果為{{result}}</h1>
+</body>
+
+
+<script>
+    const fileUploader = document.getElementById('file-uploader');
+    const reader = new FileReader();
+    const imageGrid = document.getElementById('image-grid');
+
+    fileUploader.addEventListener('change', (event) => {
+        const files = event.target.files;
+        const file = files[0];
+        reader.readAsDataURL(file);
+        
+        reader.addEventListener('load', (event) => {
+            const img = document.createElement('img');
+            imageGrid.appendChild(img);
+            img.src = event.target.result;
+            img.alt = file.name;
+            document.getElementById("basefile").innerHTML = img.src;
+        });
+        
+    });
+    
+    function post(){
+
+    }
+</script>
+
+</html>
