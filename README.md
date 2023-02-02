@@ -85,4 +85,4 @@ Now you can trigger the AWS SAM application through the **API Gateway Endpoint U
 
 ## Author <a name = "author"></a>
 
-- Jeffrey Wang ( jeffrey02120212@gmail.com ) -->
+- Jeffrey Wang ( jeffrey.wanggg@gmail.com ) -->
