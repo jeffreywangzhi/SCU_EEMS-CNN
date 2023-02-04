@@ -6,17 +6,7 @@
 # # 写入jpg文件
 # with open('./new.jpg', 'wb') as f:
 #     f.write(decode_jpg)
-
-# query = """{
-#     getAemassQeDevMainWorkFlowStatus(id: "ID_PARA"){
-#         end
-#         stages
-#         id
-#         start
-#         status
-#         type
-#     }
-# }"""
+"
 
 
 # query = query.replace("ID_PARA", "123456")
@@ -38,7 +28,6 @@ def list_files(startpath):
             for f in files:
                 print('{}{}'.format(subindent, f))
 
-list_files("C:/dev/Phy Mobile Lite/phy-mobile-lite")
 
 
 # a = 'C:/dev/Python'
