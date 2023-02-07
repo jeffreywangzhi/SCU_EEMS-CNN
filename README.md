@@ -5,4 +5,4 @@ Enterprise Emotion Management System based on Convolutional Neural Network (CNN)
 
 ## Author <a name = "author"></a>
 
-- Jeffrey Wang ( jeffrey.wanggg@gmail.com )
+- Jeffrey Wang (Jeffrey.wanggg@gmail.com)
