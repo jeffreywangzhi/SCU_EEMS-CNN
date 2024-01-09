@@ -3,4 +3,4 @@ Enterprise Emotion Management System based on Convolutional Neural Network (CNN)
 
 ![EEMS.png](EEMS.png)
 ## Who do I talk to <a name = "author"></a>
-- Jeffrey Wang (jeffrey.wanggg@gmail.com)
+- Jeffrey Wang (jeffreywangzhi@gmail.com)
